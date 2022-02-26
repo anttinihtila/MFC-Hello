@@ -1,5 +1,4 @@
 #include <afxwin.h>
-#include "pch.h"
 
 class CMyApp :public CWinApp {
 public: virtual BOOL InitInstance();
@@ -39,9 +38,9 @@ void CMainWindow::OnPaint() {
 	dc.FillSolidRect(rect, RGB(46, 139, 87));
 
 	CFont font;
-	font.CreatePointFont(400, TEXT("Arial"));
+	font.CreatePointFont(300, TEXT("Arial"));
 
-	dc.SetTextColor(RGB(0,0,0));
+	dc.SetTextColor(RGB(0, 0, 0));
 
 	dc.SetBkColor(RGB(255, 255, 255));
 
